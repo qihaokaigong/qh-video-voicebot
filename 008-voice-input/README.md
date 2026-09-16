@@ -1,6 +1,6 @@
 # 008｜ESP32 语音输入：INMP441 录音、中文波形与 WAV 上传
 
-[返回视频索引](../README.md) · [官方网站](https://qihao.dev/)
+[观看 B 站视频](https://www.bilibili.com/video/BV1MHeP65EFo/) · [返回视频索引](../README.md) · [官方网站](https://qihao.dev/)
 
 ## 这份代码能做什么
 

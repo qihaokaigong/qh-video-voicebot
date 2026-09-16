@@ -15,6 +15,7 @@
 | 005 | [第一次焊成一坨后，评论区把我教会了](https://www.bilibili.com/video/BV1YSth67EQj) | [查看代码与资料](005-improve-soldering/) |
 | 006 | [第一次焊完整块电路板，我做出了一个电子骰子](https://www.bilibili.com/video/BV1x8tG6EEtN) | [查看代码与资料](006-electronic-dice/) |
 | 007 | [接好这五根线，我的 ESP32 终于能播放语音了](https://www.bilibili.com/video/BV1sjYx6PE9k) | [查看代码与资料](007-play-voice/) |
+| 008 | ESP32 语音输入（资料准备中） | [查看代码与资料](008-voice-input/) |
 
 ## 许可
 

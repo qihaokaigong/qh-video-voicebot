@@ -120,14 +120,6 @@ Issue、截图或 QH 平台。配置通过 USB 直接写入 ESP32；页面完成
 只有芯片名称同为 ESP32-S3 不能证明硬件兼容。具体接线和数据边界见
 [架构与硬件边界](docs/architecture.md)。
 
-## 当前 Release 状态
-
-当前固件仍是 `candidate`：参考设备已在 macOS Intel 上完成烧录、本地网页配置和人工语音回合验证，
-但正式 `allowed` Release 以及 macOS Apple Silicon／Windows x64 干净电脑验收尚未完成。
-
-当前候选版只用于共同测试，不等同于正式稳定 Release。烧录前仍会展示准确版本与硬件 Profile，并等待
-用户确认。
-
 ## 开始使用与遇到问题
 
 设备进入“按住说话”后即可直接使用：按住按钮说话，松开后等待回答。Skill 不会为了完成安装而强制
@@ -147,11 +139,3 @@ Issue、截图或 QH 平台。配置通过 USB 直接写入 ESP32；页面完成
 
 具体边界见 [Provider 适配指南](docs/provider-adaptation.md)。适配工作仍由 Skill 和 AI 执行，用户不需要
 先查找源码目录或准备开发命令。
-
-## 代码职责
-
-| 仓库 | 职责 |
-| --- | --- |
-| [`qh-voice-skill`](https://github.com/qihaokaigong/qh-voice-skill) | 用户安装入口；驱动 AI 完成检查、烧录、配置、诊断和接口适配 |
-| [`qh-voice-kit`](https://github.com/qihaokaigong/qh-voice-kit) | ESP32 固件、硬件 Profile、实时语音协议、屏幕与音频运行时、Release 契约 |
-| `qh-video-voicebot` | 面向用户的视频资料与使用说明 |

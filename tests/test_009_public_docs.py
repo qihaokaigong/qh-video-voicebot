@@ -51,6 +51,12 @@ class PublicDocsTest(unittest.TestCase):
         self.assertIn("安装与配置流程到此结束", guide)
         self.assertNotIn("按屏幕提示完成一次真实对话", guide)
 
+    def test_user_guide_omits_maintainer_only_sections(self) -> None:
+        guide = (GUIDE / "README.md").read_text(encoding="utf-8")
+
+        self.assertNotIn("## 当前 Release 状态", guide)
+        self.assertNotIn("## 代码职责", guide)
+
     def test_009_guide_does_not_explain_its_relationship_to_008(self) -> None:
         guide = (GUIDE / "README.md").read_text(encoding="utf-8")
 

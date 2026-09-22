@@ -17,6 +17,15 @@ class PublicDocsTest(unittest.TestCase):
         self.assertIn("009-voice-assistant/", homepage)
         self.assertNotIn("[语音助手接入指南](voice-assistant/)", homepage)
 
+    def test_published_009_video_is_linked_from_index_and_guide(self) -> None:
+        homepage = (ROOT / "README.md").read_text(encoding="utf-8")
+        guide = (GUIDE / "README.md").read_text(encoding="utf-8")
+        video_url = "https://www.bilibili.com/video/BV1GYhE6HEzX/"
+        published_title = "零基础学硬件，我终于跑通了AI语音对话功能"
+
+        self.assertIn(f"[{published_title}]({video_url})", homepage)
+        self.assertIn(f"[观看 B 站视频]({video_url})", guide)
+
     def test_user_flow_starts_with_installing_the_skill_in_ai(self) -> None:
         guide = (GUIDE / "README.md").read_text(encoding="utf-8")
 

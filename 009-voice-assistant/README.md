@@ -1,6 +1,6 @@
 # 009｜ESP32 完整语音助手：安装与接入
 
-[返回视频索引](../README.md) · [官方网站](https://qihao.dev/)
+[观看 B 站视频](https://www.bilibili.com/video/BV1GYhE6HEzX/) · [返回视频索引](../README.md) · [官方网站](https://qihao.dev/)
 
 ## 最简单的使用方式
 

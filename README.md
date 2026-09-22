@@ -16,7 +16,7 @@
 | 006 | [第一次焊完整块电路板，我做出了一个电子骰子](https://www.bilibili.com/video/BV1x8tG6EEtN) | [查看代码与资料](006-electronic-dice/) |
 | 007 | [接好这五根线，我的 ESP32 终于能播放语音了](https://www.bilibili.com/video/BV1sjYx6PE9k) | [查看代码与资料](007-play-voice/) |
 | 008 | [按住说一句，录音自动上传并变成文字](https://www.bilibili.com/video/BV1MHeP65EFo/) | [查看代码与资料](008-voice-input/) |
-| 009 | ESP32 完整语音助手：安装与接入 | [查看接入指南](009-voice-assistant/) |
+| 009 | [零基础学硬件，我终于跑通了AI语音对话功能](https://www.bilibili.com/video/BV1GYhE6HEzX/) | [查看接入指南](009-voice-assistant/) |
 
 ## 许可
 

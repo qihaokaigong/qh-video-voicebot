@@ -75,7 +75,7 @@ Issue、截图或 QH 平台。配置通过 USB 直接写入 ESP32；页面完成
 
 ## 当前支持范围
 
-- 目标电脑：macOS arm64、Windows x64；
+- 目标电脑：macOS Intel（x64）、macOS Apple Silicon（arm64）、Windows x64；
 - 硬件 Profile：`qh.voice-kit.breadboard.n16r8.v1`；
 - 主控：ESP32-S3 N16R8；
 - 麦克风：INMP441；
@@ -88,8 +88,8 @@ Issue、截图或 QH 平台。配置通过 USB 直接写入 ESP32；页面完成
 
 ## 当前 Release 状态
 
-当前固件仍是 `candidate`：参考设备已经完成人工语音回合验证，但正式 `allowed` Release 和
-macOS arm64／Windows x64 干净电脑验收尚未完成。
+当前固件仍是 `candidate`：参考设备已在 macOS Intel 上完成烧录、本地网页配置和人工语音回合验证，
+但正式 `allowed` Release 以及 macOS Apple Silicon／Windows x64 干净电脑验收尚未完成。
 
 Skill 必须遵守 Release 门禁：没有可用的正式 Release 时，应明确告诉用户当前阻塞，而不是让用户手填
 Flash 地址或把候选版当作稳定版烧录。开发者候选验收也必须由 Skill 展示精确计划并取得确认。

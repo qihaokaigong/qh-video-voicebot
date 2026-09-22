@@ -4,19 +4,6 @@
 
 [B 站主页](https://space.bilibili.com/493690999) · [官方网站](https://qihao.dev/)
 
-## 完整语音助手
-
-如果你要把 ESP32-S3 做成可以直接对话的语音助手，请从
-[语音助手接入指南](voice-assistant/)开始。这里提供：
-
-- macOS 与 Windows 共用的环境检查和源码准备工具；
-- 可以直接交给 Agent 执行的接入提示词；
-- 固件、Skill、配置和数据边界说明；
-- 豆包实时语音 API Key 获取、首次对话验收、故障排查和其他接口适配方法。
-
-`008-voice-input` 是对应视频的历史录音上传示例；完整语音助手采用 ESP32 直连实时语音模型，
-不需要在电脑上持续运行 Python 语音服务。
-
 ## 视频与资料
 
 | 编号 | 视频 | 详细资料 |
@@ -29,6 +16,7 @@
 | 006 | [第一次焊完整块电路板，我做出了一个电子骰子](https://www.bilibili.com/video/BV1x8tG6EEtN) | [查看代码与资料](006-electronic-dice/) |
 | 007 | [接好这五根线，我的 ESP32 终于能播放语音了](https://www.bilibili.com/video/BV1sjYx6PE9k) | [查看代码与资料](007-play-voice/) |
 | 008 | [按住说一句，录音自动上传并变成文字](https://www.bilibili.com/video/BV1MHeP65EFo/) | [查看代码与资料](008-voice-input/) |
+| 009 | ESP32 完整语音助手：安装与接入 | [查看接入指南](009-voice-assistant/) |
 
 ## 许可
 

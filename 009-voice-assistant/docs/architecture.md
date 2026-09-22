@@ -56,8 +56,9 @@ Flash 16 MB，OPI PSRAM。INMP441 使用 3.3 V，所有模块必须共地。完�
 - 当前是开发板方案，没有安全芯片。物理接触设备并使用专业工具的人可能提取设备配置，因此应使用
   独立、可撤销、有限额的 Provider Key。
 
-## 源码与 Release
+## Skill 与 Release
 
-`integration-lock.json` 固定了经过本接入文档核对的 `qh-voice-skill` 和 `qh-voice-kit` 提交。
-它不是 Flash 地址来源。只有 Release 包中的 `release-manifest.json` 可以声明 Flash 文件、地址、
-大小和 SHA-256；稳定烧录还必须满足 `acceptance.status=allowed`。
+用户在 AI 中安装 `qh-voice-skill` 后，由 Skill 自己定位内部工具和固件 Release，用户不需要管理源码
+目录或版本锁。只有 Release 包中的 `release-manifest.json` 可以声明 Flash 文件、地址、大小和
+SHA-256；稳定烧录还必须满足 `acceptance.status=allowed`。文档示例、文件名和 Agent 记忆都不能代替
+Manifest 成为烧录地址来源。

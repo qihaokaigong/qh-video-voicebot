@@ -22,21 +22,8 @@ QH 平台。QH 不可用时，也不应阻断当前语音对话。
 
 ## 唯一支持的硬件 Profile
 
-当前 Profile ID：`qh.voice-kit.breadboard.n16r8.v1`。
-
-| 模块端点 | ESP32-S3 端点 | 说明 |
-| --- | --- | --- |
-| INMP441 `SCK` | GPIO4 | 麦克风位时钟 |
-| INMP441 `WS` | GPIO5 | 左右声道时钟 |
-| INMP441 `SD` | GPIO6 | 麦克风数据 |
-| 按钮 `OUT` | GPIO8 | 按住说话 |
-| ST7789 `SCK` | GPIO9 | 屏幕 SPI 时钟 |
-| ST7789 `MOSI` | GPIO10 | 屏幕 SPI 数据 |
-| ST7789 `RST` | GPIO11 | 屏幕复位 |
-| ST7789 `DC` | GPIO12 | 屏幕命令/数据 |
-| MAX98357A `BCLK` | GPIO16 | 扬声器位时钟 |
-| MAX98357A `LRC` | GPIO17 | 扬声器声道时钟 |
-| MAX98357A `DIN` | GPIO18 | 扬声器 PCM 数据 |
+当前 Profile ID：`qh.voice-kit.breadboard.n16r8.v1`。供电、共地、全部信号线、未接引脚和喇叭端子的
+完整映射见主指南的[完整接线表](../README.md#完整接线表)，不要只连接 GPIO 信号线。
 
 记录的屏幕模块为 GMT130-V1.0、ST7789、240×240、SPI mode 3；主控为 ESP32-S3 N16R8，
 Flash 16 MB，OPI PSRAM。INMP441 使用 3.3 V，所有模块必须共地。完整机器可读事实以

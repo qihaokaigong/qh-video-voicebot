@@ -27,6 +27,29 @@ class PublicDocsTest(unittest.TestCase):
         self.assertNotIn("```bash", guide)
         self.assertNotIn("python voice-assistant", guide.lower())
         self.assertNotIn("python3 voice-assistant", guide.lower())
+        self.assertNotIn("AI 不应要求用户", guide)
+
+    def test_009_guide_contains_complete_reference_wiring(self) -> None:
+        guide = (GUIDE / "README.md").read_text(encoding="utf-8")
+
+        required_connections = (
+            "`VDD` | `3V3`",
+            "`L/R` | `GND`",
+            "`OUT` | `GPIO8`",
+            "`BLK` | `3V3`",
+            "`SDA` | `GPIO10`",
+            "`DIN` | `GPIO18`",
+            "`SPK+` | 喇叭正端",
+            "`SPK-` | 喇叭负端",
+        )
+        for connection in required_connections:
+            self.assertIn(connection, guide)
+
+    def test_configuration_success_does_not_require_an_extra_health_check(self) -> None:
+        guide = (GUIDE / "README.md").read_text(encoding="utf-8")
+
+        self.assertIn("安装与配置流程到此结束", guide)
+        self.assertNotIn("按屏幕提示完成一次真实对话", guide)
 
     def test_009_guide_does_not_explain_its_relationship_to_008(self) -> None:
         guide = (GUIDE / "README.md").read_text(encoding="utf-8")
